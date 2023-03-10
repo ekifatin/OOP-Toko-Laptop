@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1D25C1F6-F465-4D31-BF17-4711318EBB86}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Daftar_Pepustakaan</RootNamespace>
-    <AssemblyName>Daftar Pepustakaan</AssemblyName>
+    <RootNamespace>TokoLaptopEkiano</RootNamespace>
+    <AssemblyName>TokoLaptopEkiano</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

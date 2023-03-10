@@ -1,0 +1,15 @@
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\bin\Debug\TokoLaptopEkiano.exe.config
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\bin\Debug\TokoLaptopEkiano.exe
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\bin\Debug\TokoLaptopEkiano.pdb
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\bin\Debug\Google.Protobuf.dll
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\bin\Debug\MySql.Data.xml
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.csproj.AssemblyReference.cache
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.Dashboard.resources
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.Form1.resources
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.Properties.Resources.resources
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.csproj.GenerateResource.cache
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.csproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.csproj.CopyComplete
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.exe
+C:\Users\acer\Documents\Sekolah\XII RPL 3\BootCamp\Kasir\TokoLaptopEkiano\TokoLaptopEkiano\obj\Debug\TokoLaptopEkiano.pdb

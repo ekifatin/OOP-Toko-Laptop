@@ -3,7 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace Daftar_Pepustakaan
+namespace TokoLaptopEkiano
 {
     public partial class Form1 : Form
     {

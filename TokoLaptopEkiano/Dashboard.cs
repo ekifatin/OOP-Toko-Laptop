@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.IO;
 
-namespace Daftar_Pepustakaan
+namespace TokoLaptopEkiano
 {
     public partial class Dashboard : Form
     {
