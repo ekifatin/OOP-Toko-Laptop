@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -8,8 +7,6 @@ namespace TokoLaptopEkiano
     public partial class Form1 : Form
     {
         private MySqlCommand cmd;
-        private DataSet ds;
-        private MySqlDataAdapter da;
         private MySqlDataReader rd;
 
         Koneksi Konn = new Koneksi();
@@ -17,12 +14,6 @@ namespace TokoLaptopEkiano
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             MySqlConnection conn = Konn.GetConn();
@@ -39,11 +30,6 @@ namespace TokoLaptopEkiano
             {
                 MessageBox.Show("Maaf Username atau Password anda salah");
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

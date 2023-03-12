@@ -88,7 +88,6 @@ namespace TokoLaptopEkiano
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(172, 22);
             this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -101,7 +100,6 @@ namespace TokoLaptopEkiano
             this.label2.Size = new System.Drawing.Size(99, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Brand Barang";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox3
             // 
@@ -153,8 +151,6 @@ namespace TokoLaptopEkiano
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1211, 326);
             this.dataGridView1.TabIndex = 12;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // pictureBox1
@@ -192,7 +188,7 @@ namespace TokoLaptopEkiano
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 34);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Edit";
+            this.button2.Text = "Ubah";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -252,7 +248,6 @@ namespace TokoLaptopEkiano
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(40, 22);
             this.textBox8.TabIndex = 20;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label5
             // 

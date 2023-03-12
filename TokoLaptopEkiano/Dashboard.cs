@@ -16,6 +16,22 @@ namespace TokoLaptopEkiano
 
         MySqlConnection connection = new MySqlConnection("datasource = localhost;port=3307;user=root;password='';database=dblaptop");
 
+        public void resetIncrement()
+        {
+            MySqlScript script = new MySqlScript(connection, "SET @id := 0; UPDATE data_laptop SET id = @id := (@id+1); " +
+                "ALTER TABLE data_laptop AUTO_INCREMENT = 1;");
+            script.Execute();
+        }
+        public void resetData()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            tanggal.Value = DateTime.Now;
+            textBox8.Text = "";
+            pictureBox1.Image = null;
+        }
         public void Tampil(string valueToSearch)
         {
             MySqlCommand command = new MySqlCommand("select * from data_laptop where concat(id,nama, brand, stock, tglmasuk, harga) like '%" + valueToSearch + "%'", connection);
@@ -36,21 +52,6 @@ namespace TokoLaptopEkiano
             dataGridView1.Columns[4].HeaderText = "Harga Barang";
             dataGridView1.Columns[5].HeaderText = "Tanggal Masuk";
             dataGridView1.Columns[6].HeaderText = "Foto";
-        }
-        public void resetIncrement()
-        {
-            MySqlScript script = new MySqlScript(connection, "SET @id := 0; UPDATE data_laptop SET id = @id := (@id+1); " +
-                "ALTER TABLE data_laptop AUTO_INCREMENT = 1;");
-            script.Execute();
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
         public void ExecMyQuery(MySqlCommand mcomd, string myMsg)
         {
@@ -75,7 +76,6 @@ namespace TokoLaptopEkiano
                 pictureBox1.Image = Image.FromFile(opf.FileName);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             MemoryStream ms = new MemoryStream();
@@ -90,26 +90,16 @@ namespace TokoLaptopEkiano
             command.Parameters.Add("@harga", MySqlDbType.VarChar).Value = textBox4.Text;
             command.Parameters.Add("@tglmasuk", MySqlDbType.Date).Value= date1;
             command.Parameters.Add("@foto", MySqlDbType.Blob).Value = img;
-            resetIncrement();
-            ExecMyQuery(command, "Data Berhasil Ditambahkan");
-        }
 
+            ExecMyQuery(command, "Data Berhasil Ditambahkan");
+            resetIncrement();
+            resetData();
+        }
         private void Dashboard_Load(object sender, EventArgs e)
         {
             resetIncrement();
             Tampil("");
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void dataGridView1_Click(object sender, EventArgs e)
         {
             Byte[] img = (Byte[])dataGridView1.CurrentRow.Cells[6].Value;
@@ -128,7 +118,6 @@ namespace TokoLaptopEkiano
             }
             textBox8.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             MySqlCommand command = new MySqlCommand("DELETE FROM data_laptop WHERE id=@id", connection);
@@ -136,9 +125,9 @@ namespace TokoLaptopEkiano
 
             ExecMyQuery(command, "Data Berhasil Dihapus");
             resetIncrement();
+            resetData();
             Tampil("");
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             MemoryStream ms = new MemoryStream();
@@ -155,16 +144,11 @@ namespace TokoLaptopEkiano
             command.Parameters.Add("@foto", MySqlDbType.Blob).Value = img;
 
             ExecMyQuery(command, "Data Berhasil Diubah");
+            resetData();
         }
-
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
             Tampil(textBox7.Text);
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
